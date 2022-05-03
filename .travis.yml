@@ -7,4 +7,4 @@ before_install:
   - docker build -t mariasurgan/docker-react -f Dockerfil.dev .
 
 script:
-  - docker run -e CI=true mariasurgan/docker-react npm run test
+  - docker run mariasurgan/docker-react npm run test -- --coverage
